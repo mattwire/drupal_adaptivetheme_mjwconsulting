@@ -38,6 +38,9 @@
  * element as these can be overridden using font theme settings.
  */
 
+$body-colour: #ffffea;
+$header-colour: rgb(205, 232, 254);
+
 html {
   background: $page;
 }
@@ -45,6 +48,7 @@ html {
 body {
   font-family: $sans-serif-small; // Set from _custom.scss font variables
   font-size: 87.5%;
+  background-color: #ffffea;
 }
 
 
@@ -168,7 +172,9 @@ var {
 /*
  * Wraps all header elements - branding and .region-header
  */
-#header {}
+#header {
+  background-color: $header-colour;
+}
 
 
 /*
@@ -187,14 +193,17 @@ var {
  * Wraps the main-content-header, the content region and feed-icons. Use this
  * wrapper to style the entire main content column
  */
-#main-content {}
+#main-content {
+}
 
 
 /*
  * Wraps the content region, avoid applying styles to this wrapper, its used
  * mainly for position and invisible gutters and can be problematic to style
  */
-#content {}
+#content {
+  background-color: whitesmoke;
+}
 
 
 /*
