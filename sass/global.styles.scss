@@ -39,7 +39,9 @@
  */
 
 $body-colour: #ffffea;
-$header-colour: rgb(205, 232, 254);
+$header-colour: #000000;
+$link-colour: darken(#00d520, 20%);
+
 
 html {
   background: $page;
@@ -310,17 +312,19 @@ var {
 /*
  * Wraps all the branding elements, logo, name and slogan
  */
-#branding {}
+#branding {
+  display: inline;
+}
 
 
 /*
  * Logo
  */
 #logo {
-  padding: 10px 0;
+  display: inline;
 
   img {
-    vertical-align: bottom;
+    vertical-align: middle;
   }
 }
 
@@ -328,7 +332,10 @@ var {
 /*
  * Wrapper for the site name and slogan
  */
-#name-and-slogan {}
+#name-and-slogan {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 
 /*
@@ -336,8 +343,11 @@ var {
  */
 #site-name {
   margin: 0;
+  display: inline;
+  padding-left: 10px;
 
   a {
+    color: whitesmoke;
 
     &:link,
     &:visited {
@@ -346,7 +356,7 @@ var {
 
     &:hover,
     &:focus {
-      text-decoration: underline;
+      color: darken(whitesmoke, 10%);
     }
   }
 }
@@ -548,6 +558,8 @@ ul.links {
 
 a {
   text-decoration: none;
+  color: $link-colour;
+  font-weight: 500;
 
   &:link,
   &:visited {}
@@ -557,7 +569,7 @@ a {
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    color: lighten($link-colour, 10%);
   }
 }
 

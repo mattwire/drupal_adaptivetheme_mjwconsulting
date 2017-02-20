@@ -70,7 +70,7 @@ var {
  * Wraps all header elements - branding and .region-header
  */
 #header {
-  background-color: #cde8fe;
+  background-color: #000000;
 }
 
 /*
@@ -147,30 +147,44 @@ var {
 /*
  * Wraps all the branding elements, logo, name and slogan
  */
+#branding {
+  display: inline;
+}
+
 /*
  * Logo
  */
 #logo {
-  padding: 10px 0;
+  display: inline;
 }
 #logo img {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 /*
  * Wrapper for the site name and slogan
  */
+#name-and-slogan {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /*
  * Site name (h1)
  */
 #site-name {
   margin: 0;
+  display: inline;
+  padding-left: 10px;
+}
+#site-name a {
+  color: whitesmoke;
 }
 #site-name a:link, #site-name a:visited {
   text-decoration: none;
 }
 #site-name a:hover, #site-name a:focus {
-  text-decoration: underline;
+  color: gainsboro;
 }
 
 /*
@@ -305,9 +319,11 @@ ul.links li {
  * ========================================================================== */
 a {
   text-decoration: none;
+  color: #006f11;
+  font-weight: 500;
 }
 a:hover, a:focus {
-  text-decoration: underline;
+  color: #00a218;
 }
 
 /* =============================================================================
