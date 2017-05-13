@@ -1,0 +1,112 @@
+.webform-component .form-type-radio, 
+.webform-component-radios label, 
+.webform-component-radios .form-radios,
+.webform-component-date,
+.webform-component-date label,
+.webform-component-date .webform-datepicker,
+.webform-component-textfield label,
+.webform-component .form-item,
+.webform-component-email label,
+.webform-component-number label,
+.webform-component--courses-taught-before-fieldset--0--courses-taught-before-venue,
+.webform-component--fieldset-tutor-details--0--tutor-training-and-qualifications-related-to-subject-matter--0--tutor-qualification,
+.webform-component--teaching-qualification--tutor-qualification-teach,
+.webform-component--tutor-professional-body-fieldset--0--tutor-professional-body,
+.webform-component--dates-listing--0--listing-general-location-town
+{
+  display: inline;
+}
+.webform-component .form-type-checkbox {
+  display: block;
+}
+.webform-component-date label {
+  display: none;
+}
+
+.form-item-submitted-website-listing-fieldset-civicrm-1-membership-1-membership-custom-99 {
+  display: block !important;
+}
+
+span.quickcheck {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 130%;
+  padding-bottom: 20px;
+  display: block;
+}
+
+div.quickcheck,
+.webform-component--agreement-confirm {
+  padding: 10px;
+  border: 3px solid #2E2E6A;
+}
+
+.webform-component-markup h2 {
+  border-bottom: 3px solid #2E2E6A;
+  font-color: #2E2E6A;
+  font-size: 200%;
+}
+
+.webform-component--agreement li {
+  margin-bottom: 15px;
+}
+
+span.cpd-note {
+  font-weight: bold;
+  text-align: center;
+  display: block; 
+}
+
+.webform-progressbar-page {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.webform-progressbar-page span {
+  list-style-type: none;
+  display: inline-block;
+
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+
+  background-color: #E2E2F8;
+}
+
+.webform-progressbar-page > span {
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 5px 0 5px;
+}
+
+.webform-progressbar-page.current > span {
+  color: #FFFFFF;
+  background-color: #2E2E6A;
+}
+
+span.webform-progressbar-page-number {
+  display: none;
+}
+
+.webform-progressbar-number {
+  text-align: center;
+}
+
+input:read-only {
+  border-style: solid 1px;
+  opacity: 0.7;
+}
+
+.error {
+  color: red;
+}
+
+.webform-component--civicrm-1-contribution-1-contribution-total-amount {
+  display: none;
+}
