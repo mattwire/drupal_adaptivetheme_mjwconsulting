@@ -110,9 +110,3 @@ input:read-only {
 .webform-component--civicrm-1-contribution-1-contribution-total-amount {
   display: none;
 }
-
-/* Disable file links when uploaded as we don't have permission to access that directory */
-.form-managed-file > span {
-  pointer-events: none;
-  opacity: 0.7;
-}
