@@ -8,11 +8,11 @@
 .webform-component .form-item,
 .webform-component-email label,
 .webform-component-number label,
-.webform-component--courses-taught-before-fieldset--0--courses-taught-before-venue,
-.webform-component--fieldset-tutor-details--0--tutor-training-and-qualifications-related-to-subject-matter--0--tutor-qualification,
+div [class$="--courses-taught-before-venue"],
+div [class$="--tutor-qualification"],
 .webform-component--teaching-qualification--tutor-qualification-teach,
-.webform-component--tutor-professional-body-fieldset--0--tutor-professional-body,
-.webform-component--dates-listing--0--listing-general-location-town
+div [class$="--tutor-professional-body"],
+div [class$="--listing-general-location-town"]
 {
   display: inline;
 }
@@ -109,4 +109,10 @@ input:read-only {
 
 .webform-component--civicrm-1-contribution-1-contribution-total-amount {
   display: none;
+}
+
+/* Disable file links when uploaded as we don't have permission to access that directory */
+.form-managed-file > span {
+  pointer-events: none;
+  opacity: 0.7;
 }
